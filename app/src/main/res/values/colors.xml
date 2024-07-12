@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="crimsonRed">#C3002F</color>
+    <color name="ivory">#FFFDE4</color>
+    <color name="gray">#51626F</color>
+    <color name="warmGray2">#837259</color>
+    <color name="yello">#FFEA9B</color>
+    <color name="coolGray">#D5D6D2</color>
+    <color name="warmGray">#B7B1A9</color>
+    <color name="lightGray">#8996A0</color>
+    <color name="gold">#8B634B</color>
+    <color name="silver">#8A8D8F</color>
 </resources>
