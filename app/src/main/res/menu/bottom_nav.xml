@@ -3,24 +3,24 @@
     <item
         android:title="공지"
         android:id="@+id/main"
-        android:icon="@drawable/home_icon"
+        android:icon="@drawable/bottom_icon_home"
         />
 
     <item
         android:title="민원"
         android:id="@+id/complaints"
-        android:icon="@drawable/complaint_icon"
+        android:icon="@drawable/bottom_icon_complaint"
         />
 
     <item
         android:title="식단"
         android:id="@+id/diet"
-        android:icon="@drawable/diet_icon"
+        android:icon="@drawable/bottom_icon_diet"
         />
 
     <item
         android:title="마이페이지"
         android:id="@+id/myPage"
-        android:icon="@drawable/my_page_icon"
+        android:icon="@drawable/bottom_icon_my_page"
         />
 </menu>
