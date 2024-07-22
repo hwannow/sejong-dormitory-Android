@@ -8,7 +8,21 @@
     </style>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-
     </style>
+
+    <style name="CustomSwitchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@android:color/transparent</item>
+        <item name="colorSwitchThumbNormal">@android:color/transparent</item>
+        <item name="android:switchMinWidth">35dp</item>
+        <item name="android:switchPadding">0dp</item>
+        <item name="android:thumbTextPadding">0dp</item>
+    </style>
+
     <style name="Theme.Dormitory" parent="Base.Theme.Dormitory" />
 </resources>
+<!--<style name="CustomSwitch">-->
+<!--<item name="android:switchMinWidth">0dp</item>-->
+<!--<item name="android:track">@drawable/my_page_selector_switch</item>-->
+<!--<item name="android:thumb">@drawable/my_page_switch_thumb</item>-->
+<!--<item name="android:thumbTextPadding">10dp</item>-->
+<!--</style>-->
