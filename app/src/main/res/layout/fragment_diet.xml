@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="식단표"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="25dp"
 
@@ -59,6 +59,7 @@
         app:tabSelectedTextColor="@color/white"
         app:tabBackground="@drawable/diet_tab_layout_selector"
         android:background="@drawable/diet_tab_layout_background"
+        app:tabMode="fixed"
         />
 
     <androidx.viewpager2.widget.ViewPager2
@@ -74,6 +75,7 @@
         android:paddingVertical="20dp"
         android:background="@drawable/diet_menu_background"
         android:elevation="10dp"
+        android:layout_weight="1"
 
         />
 
