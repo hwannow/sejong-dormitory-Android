@@ -1,12 +1,12 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.Fragment
+import com.sejong.dormitory.fragment.DietFragment
+import com.sejong.dormitory.fragment.MainFragment
+import com.sejong.dormitory.fragment.MyPageFragment
+import com.sejong.dormitory.R
 import com.sejong.dormitory.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

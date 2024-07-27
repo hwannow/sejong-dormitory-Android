@@ -1,4 +1,4 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,15 +1,11 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.activity
 
-import android.app.Activity
 import android.os.Bundle
-import android.widget.FrameLayout
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.sejong.dormitory.fragment.DialogFragment
 import com.sejong.dormitory.databinding.ActivityComplaintsBinding
 
-class ComplaintsActivity : AppCompatActivity() {
+class ComplaintsActivity : AppCompatActivity(), DialogFragment.TitleUpdateListener {
     private lateinit var binding:ActivityComplaintsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +19,10 @@ class ComplaintsActivity : AppCompatActivity() {
         binding.btnChoose.setOnClickListener {
             val bottomSheet = DialogFragment()
             bottomSheet.show(supportFragmentManager, bottomSheet.tag)
-
         }
+    }
+
+    override fun onTextUpdate(newText: String) {
+        binding.tvTitle.text = newText
     }
 }

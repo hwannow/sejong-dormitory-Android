@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/tv_facility"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -34,6 +35,7 @@
             android:background="#E5E5E5" />
 
         <LinearLayout
+            android:id="@+id/tv_life"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"

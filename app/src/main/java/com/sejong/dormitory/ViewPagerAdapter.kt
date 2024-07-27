@@ -2,6 +2,7 @@ package com.sejong.dormitory
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.sejong.dormitory.fragment.DayFragment
 
 class ViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     private val daysOfWeek = listOf(

@@ -1,4 +1,4 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
+import com.sejong.dormitory.ViewPagerAdapter
 import com.sejong.dormitory.databinding.FragmentDietBinding
 
 

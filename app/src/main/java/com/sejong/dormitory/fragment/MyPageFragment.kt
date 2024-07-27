@@ -1,4 +1,4 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.fragment
 
 import android.content.Intent
 import android.net.Uri
@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.sejong.dormitory.activity.ScoreActivity
 import com.sejong.dormitory.databinding.FragmentMyPageBinding
 
 class MyPageFragment : Fragment() {
