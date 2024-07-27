@@ -21,6 +21,8 @@ class LifeAdapter(val List: ArrayList<LifeData>): RecyclerView.Adapter<RecyclerV
             holder.date.text = List[position].date.toString()
             holder.writer.text = List[position].writer
             holder.secret.text = List[position].secret
+
+            holder.secret.isSelected = (List[position].secret == "비공개")
         }
     }
 

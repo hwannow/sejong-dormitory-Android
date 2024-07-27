@@ -21,6 +21,9 @@ class FacilityAdapter(val List: ArrayList<FacilityData>): RecyclerView.Adapter<R
             holder.date.text = List[position].date.toString()
             holder.writer.text = List[position].writer
             holder.reception.text = List[position].reception
+
+
+            holder.reception.isSelected = (List[position].reception == "처리 중")
         }
     }
 }

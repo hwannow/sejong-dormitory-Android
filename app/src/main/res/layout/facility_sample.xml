@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
@@ -57,9 +57,9 @@
         android:id="@+id/tv_reception"
         android:layout_width="49dp"
         android:layout_height="29dp"
-        android:text="처리 중"
+        android:text="처리 완료"
         android:textSize="10sp"
-        android:background="@color/crimsonRed"
+        android:background="@drawable/complaint_text_view_background"
         android:textColor="@color/white"
         android:gravity="center"
         android:textStyle="bold"

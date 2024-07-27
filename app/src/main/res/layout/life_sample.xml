@@ -59,7 +59,7 @@
         android:layout_height="29dp"
         android:text="공개"
         android:textSize="10sp"
-android:background="@color/crimsonRed"
+        android:background="@drawable/complaint_text_view_background"
         android:textColor="@color/white"
         android:gravity="center"
         android:textStyle="bold"
