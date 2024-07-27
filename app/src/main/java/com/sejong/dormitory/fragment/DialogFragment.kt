@@ -11,14 +11,21 @@ import com.sejong.dormitory.databinding.FragmentDialogBinding
 
 class DialogFragment : BottomSheetDialogFragment() {
     private lateinit var binding:FragmentDialogBinding
-    private var listener: TitleUpdateListener? = null
+    private var titleListener: TitleUpdateListener? = null
+    private var adapterListener: AdapterUpdateListener? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is TitleUpdateListener) {
-            listener = context
+        titleListener = if (context is TitleUpdateListener) {
+            context
         } else {
-            listener = null
+            null
+        }
+
+        adapterListener = if (context is AdapterUpdateListener) {
+            context
+        } else {
+            null
         }
     }
 
@@ -46,17 +53,24 @@ class DialogFragment : BottomSheetDialogFragment() {
         }
 
         binding.tvLife.setOnClickListener {
-            listener?.onTextUpdate("생활 민원")
+            titleListener?.onTextUpdate("생활 민원")
+            adapterListener?.onLifeAdapterUpdate()
             dismiss()
         }
 
         binding.tvFacility.setOnClickListener {
-            listener?.onTextUpdate("시설 민원")
+            titleListener?.onTextUpdate("시설 민원")
+            adapterListener?.onFacilityAdapterUpdate()
             dismiss()
         }
     }
 
     interface TitleUpdateListener {
         fun onTextUpdate(newText: String)
+    }
+
+    interface AdapterUpdateListener {
+        fun onFacilityAdapterUpdate()
+        fun onLifeAdapterUpdate()
     }
 }
