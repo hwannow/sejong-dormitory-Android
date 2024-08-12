@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sejong.dormitory.MainAdapter
-import com.sejong.dormitory.MainData
+import com.sejong.dormitory.data.MainData
 import com.sejong.dormitory.databinding.FragmentMainBinding
 import java.time.LocalDate
 

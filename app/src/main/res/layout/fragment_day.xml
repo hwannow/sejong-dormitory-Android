@@ -1,139 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/tv_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7월 11일"
-        android:textSize="14sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="날짜"
+        android:textSize="16sp"
         android:textStyle="bold"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/tv_day"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="5dp"
-        />
+        android:background="@color/gray"
+         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_day" />
 
     <TextView
         android:id="@+id/tv_morning"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:text="조식"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/diet_background"
         android:gravity="center"
+        android:text="조식"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         android:textStyle="bold"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view" />
 
     <TextView
         android:id="@+id/tv_breakfast"
-        android:layout_width="181dp"
-        android:layout_height="30dp"
-        android:text="식당 카페에 샐러드&amp;샌드위치 예약하신 후 이용 가능합니다."
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintStart_toEndOf="@id/tv_morning"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="17dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="식당 카페에 샐러드&amp;샌드위치 예약하신 후\n이용 가능합니다."
         android:textColor="@color/black"
-        />
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_morning"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginHorizontal="21dp"/>
 
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/tv_morning"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
-        />
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_morning" />
 
     <TextView
         android:id="@+id/tv_afternoon"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:text="점심"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@id/view2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/diet_background"
         android:gravity="center"
+        android:text="점심"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         android:textStyle="bold"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view2" />
 
     <TextView
         android:id="@+id/tv_lunch"
-        android:layout_width="181dp"
-        android:layout_height="30dp"
-        android:text="식당 카페에 샐러드&amp;샌드위치 예약하신 후 이용 가능합니다."
-        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="식단이 등록되지 않았습니다."
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/view2"
-        app:layout_constraintStart_toEndOf="@id/tv_morning"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/view3"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="17dp"
-        />
+        app:layout_constraintStart_toEndOf="@id/tv_morning"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:layout_marginHorizontal="21dp"/>
 
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/tv_afternoon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"
-        />
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_afternoon" />
 
     <TextView
         android:id="@+id/tv_evening"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        android:text="저녁"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@id/view3"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/diet_background"
         android:gravity="center"
+        android:text="저녁"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         android:textStyle="bold"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view3" />
 
     <TextView
         android:id="@+id/tv_dinner"
-        android:layout_width="181dp"
-        android:layout_height="30dp"
-        android:text="식당 카페에 샐러드&amp;샌드위치 예약하신 후 이용 가능합니다."
-        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="식단이 등록되지 않았습니다."
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/view3"
-        app:layout_constraintStart_toEndOf="@id/tv_morning"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="17dp"
-        />
+        app:layout_constraintStart_toEndOf="@id/tv_morning"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        android:layout_marginHorizontal="21dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

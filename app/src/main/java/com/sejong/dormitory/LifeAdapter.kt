@@ -3,6 +3,7 @@ package com.sejong.dormitory
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.sejong.dormitory.data.LifeData
 import com.sejong.dormitory.databinding.LifeSampleBinding
 
 class LifeAdapter(val List: ArrayList<LifeData>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){

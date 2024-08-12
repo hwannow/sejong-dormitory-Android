@@ -1,4 +1,4 @@
-package com.sejong.dormitory
+package com.sejong.dormitory.data
 
 import java.time.LocalDate
 

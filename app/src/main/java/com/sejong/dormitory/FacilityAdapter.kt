@@ -3,6 +3,7 @@ package com.sejong.dormitory
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.sejong.dormitory.data.FacilityData
 import com.sejong.dormitory.databinding.FacilitySampleBinding
 
 class FacilityAdapter(val List: ArrayList<FacilityData>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {

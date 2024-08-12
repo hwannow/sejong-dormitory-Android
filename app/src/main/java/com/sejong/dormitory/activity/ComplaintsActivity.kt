@@ -7,10 +7,10 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sejong.dormitory.FacilityAdapter
-import com.sejong.dormitory.FacilityData
+import com.sejong.dormitory.data.FacilityData
 import com.sejong.dormitory.FacilityWriteActivity
 import com.sejong.dormitory.LifeAdapter
-import com.sejong.dormitory.LifeData
+import com.sejong.dormitory.data.LifeData
 import com.sejong.dormitory.LifeWriteActivity
 import com.sejong.dormitory.fragment.DialogFragment
 import com.sejong.dormitory.databinding.ActivityComplaintsBinding

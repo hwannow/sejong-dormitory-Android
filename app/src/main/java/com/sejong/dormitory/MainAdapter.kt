@@ -3,6 +3,7 @@ package com.sejong.dormitory
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.sejong.dormitory.data.MainData
 import com.sejong.dormitory.databinding.MainSampleBinding
 
 class MainAdapter(val List: ArrayList<MainData>):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
